@@ -1,6 +1,5 @@
-import { HomePage } from '@/components/features';
+import { redirect } from 'next/navigation';
 
 export default function Home() {
-  /* TESTTTT */
-  return <HomePage />;
+  redirect('/login');
 }

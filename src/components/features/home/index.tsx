@@ -10,6 +10,8 @@ import {
   useMantineColorScheme,
 } from '@mantine/core';
 
+import { setUserLocale } from '@/services/locale';
+
 export default function HomePage() {
   const { setColorScheme, clearColorScheme } = useMantineColorScheme();
 
@@ -46,6 +48,7 @@ export default function HomePage() {
         <Button onClick={() => setColorScheme('light')}>Light</Button>
         <Button onClick={() => setColorScheme('dark')}>Dark</Button>
         <Button onClick={() => setColorScheme('auto')}>Auto</Button>
+        <Button onClick={() => setUserLocale('id')}>ID</Button>
         <Button onClick={clearColorScheme}>Clear</Button>
       </Group>
     </Stack>
