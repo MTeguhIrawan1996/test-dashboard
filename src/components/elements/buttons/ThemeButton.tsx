@@ -9,12 +9,13 @@ export function ThemeButton() {
 
   return (
     <ActionIcon
+      c='gray.5'
       size='md'
-      variant='light'
+      variant='transparent'
       aria-label='MoonIcon'
       onClick={() => setColorScheme(colorScheme === 'dark' ? 'light' : 'dark')}
     >
-      <IconMoon style={{ width: '70%', height: '70%' }} stroke={1.2} />
+      <IconMoon />
     </ActionIcon>
   );
 }

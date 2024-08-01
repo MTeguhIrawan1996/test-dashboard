@@ -25,7 +25,14 @@ export const LoginFormUi = ({ children }: ILoginFormUi) => {
           </Text>
         </Stack>
         <Stack align='center' gap={4}>
-          <Text fz={{ base: 20, xs: 24 }} fw={600} c='dark.5'>
+          <Text
+            fz={{ base: 20, xs: 24 }}
+            fw={600}
+            style={{
+              color:
+                'light-dark(var(--mantine-color-dark-5),var(--mantine-color-gray-2))',
+            }}
+          >
             {t('title')}
           </Text>
           <Text fz={{ base: 12, xs: 14 }} fw={400} c='gray.4'>
