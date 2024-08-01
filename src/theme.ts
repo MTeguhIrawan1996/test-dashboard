@@ -21,20 +21,20 @@ export const theme = createTheme({
   },
 
   /* Colors */
-  primaryShade: 5,
-  primaryColor: 'teal',
+  primaryShade: 6,
+  primaryColor: 'deep-blue',
   colors: {
-    'bright-pink': [
-      '#F0BBDD',
-      '#ED9BCF',
-      '#EC7CC3',
-      '#ED5DB8',
-      '#F13EAF',
-      '#F71FA7',
-      '#FF00A1',
-      '#E00890',
-      '#C50E82',
-      '#AD1374',
+    'deep-blue': [
+      '#ebefff',
+      '#d5dafc',
+      '#a9b1f1',
+      '#7b87e9',
+      '#5362e1',
+      '#3a4bdd',
+      '#2d3fdc',
+      '#1f32c4',
+      '#182cb0',
+      '#0b259c',
     ],
 
     primary: virtualColor({

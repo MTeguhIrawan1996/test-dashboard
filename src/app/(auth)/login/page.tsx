@@ -1,8 +1,7 @@
-import { useTranslations } from 'next-intl';
 import * as React from 'react';
 
-export default function Login() {
-  const t = useTranslations('HomePage');
+import { LoginPage } from '@/components/features';
 
-  return <h1>{t('title')}</h1>;
+export default function Login() {
+  return <LoginPage />;
 }

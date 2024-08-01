@@ -1,5 +1,19 @@
 {
   "HomePage": {
     "title": "Hello world! ID"
+  },
+  "validation": {
+    "emailIsRequired": "Email is required",
+    "passwordMinimum": "Password minimum {value} characters"
+  },
+  "auth": {
+    "login": {
+      "title": "Log In to Dashboard Kit",
+      "subTitle": "Enter your email and password below",
+      "signIn": "Sign In",
+      "signUp": "Sign Up",
+      "forgotPassword": "Forgot Password?",
+      "dHaveAccount": "Don't have an account?"
+    }
   }
 }

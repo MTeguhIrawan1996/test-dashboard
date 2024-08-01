@@ -4,8 +4,8 @@ import { Roboto } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
 
-import './globals.css';
 import '@mantine/core/styles.css';
+import './globals.css';
 
 import { theme } from '@/theme';
 
