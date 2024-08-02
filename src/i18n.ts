@@ -7,8 +7,13 @@ export default getRequestConfig(async () => {
   // read from `cookies()`, `headers()`, etc.
   const locale = await getUserLocale();
 
+  const messages = {
+    ...(await import(`../public/locales/${locale}.json`)).default,
+    ...(await import(`../public/locales/input/${locale}.json`)).default,
+  };
+
   return {
     locale,
-    messages: (await import(`../public/locales/${locale}.json`)).default,
+    messages,
   };
 });

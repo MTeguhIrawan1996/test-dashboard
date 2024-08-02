@@ -10,15 +10,18 @@ type ICommonControlForm<T> = {
 
 export type ITextInputRhfProps = {
   control: 'text-input';
-} & ICommonControlForm<Omit<TextInputProps, 'name'>>;
+  label: string;
+} & ICommonControlForm<Omit<TextInputProps, 'name' | 'label'>>;
 
 export type IPasswordInputRhfProps = {
   control: 'password-input';
-} & ICommonControlForm<Omit<PasswordInputProps, 'name'>>;
+  label: string;
+} & ICommonControlForm<Omit<PasswordInputProps, 'name' | 'label'>>;
 
 export type ITextAreaInputRhfProps = {
   control: 'text-area';
-} & ICommonControlForm<Omit<TextareaProps, 'name'>>;
+  label: string;
+} & ICommonControlForm<Omit<TextareaProps, 'name' | 'label'>>;
 
 export type ControllerProps =
   | ITextInputRhfProps

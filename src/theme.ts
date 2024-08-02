@@ -5,9 +5,9 @@ import { createTheme, rem, virtualColor } from '@mantine/core';
 export const theme = createTheme({
   /* Put your mantine theme override here */
   /* Typography */
-  fontFamily: 'Roboto, sans-serif',
+  fontFamily: 'Poppins, sans-serif',
   headings: {
-    fontFamily: 'Roboto, sans-serif',
+    fontFamily: 'Poppins, sans-serif',
     sizes: {
       h1: { fontSize: rem(36) },
     },
@@ -56,4 +56,5 @@ export const theme = createTheme({
     md: '1px 1px 3px rgba(0, 0, 0, .25)',
     xl: '5px 5px 3px rgba(0, 0, 0, .25)',
   },
+  cursorType: 'pointer',
 });

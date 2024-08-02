@@ -15,7 +15,7 @@ import {
 } from '@/utils/validation/auth/auth-validation';
 
 export function LoginFormClient() {
-  const t = useTranslations('auth.login');
+  const t = useTranslations();
   const router = useRouter();
 
   const methods = useForm<ILoginTypeSchema>({
@@ -36,16 +36,16 @@ export function LoginFormClient() {
         <Stack>
           <FormController
             control='text-input'
-            label='Email'
+            label='email'
             name='email'
-            placeholder='Email address'
+            placeholder={t('input.emailAddress')}
             radius='md'
           />
           <FormController
             control='password-input'
-            label='Password'
+            label='password'
             name='password'
-            placeholder='Password'
+            placeholder={t('input.password')}
             radius='md'
           />
         </Stack>
@@ -53,7 +53,7 @@ export function LoginFormClient() {
           <PrimaryButton
             type='submit'
             size='md'
-            label={t('signIn')}
+            label={t('auth.login.signIn')}
             fullWidth
             fw={400}
             fz={14}

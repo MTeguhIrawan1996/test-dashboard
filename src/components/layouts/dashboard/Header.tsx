@@ -5,14 +5,25 @@ import {
   Burger,
   Divider,
   Group,
+  Skeleton,
   Text,
   Title,
 } from '@mantine/core';
 import { IconBell, IconSearch } from '@tabler/icons-react';
+// import { ThemeButton } from '@/components/elements';
+import dynamic from 'next/dynamic';
 import { usePathname } from 'next/navigation';
 import * as React from 'react';
 
-import { ThemeButton } from '@/components/elements';
+import { InternatinoalizationButton } from '@/components/elements';
+
+const ThemeButton = dynamic(
+  () => import('@/components/elements').then((mod) => mod.ThemeButton),
+  {
+    ssr: false,
+    loading: () => <Skeleton height={20} width={50} radius='xl' />,
+  },
+);
 
 type IHeaderProps = {
   opened: boolean;
@@ -39,7 +50,9 @@ export const Header = ({ opened, toggle }: IHeaderProps) => {
         </Title>
       </Group>
       <Group>
+        <InternatinoalizationButton />
         <ThemeButton />
+        <Divider h={30} mx='sm' my='auto' size='sm' orientation='vertical' />
         <ActionIcon variant='transparent' c='gray.5'>
           <IconSearch />
         </ActionIcon>

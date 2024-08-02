@@ -15,5 +15,15 @@
       "forgotPassword": "Forgot Password?",
       "dHaveAccount": "Don't have an account?"
     }
+  },
+  "navbar": {
+    "overview": "Overview",
+    "tickets": "Tickets",
+    "ideas": "Ideas",
+    "contact": "Contact",
+    "agents": "Agents",
+    "articles": "Articles",
+    "settings": "Settings",
+    "subscription": "Subscription"
   }
 }

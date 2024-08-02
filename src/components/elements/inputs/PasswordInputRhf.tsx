@@ -33,8 +33,8 @@ export function PasswordInputRhf({
       }}
       label={
         <Group justify='space-between' align='center'>
-          <Text tt='uppercase' fz={12} fw={500}>
-            {label}
+          <Text fz={12} tt='uppercase' fw={500}>
+            {t(`input.${label}`)}
           </Text>
           <Text fz={12} fw={500}>
             {t('auth.login.forgotPassword')}

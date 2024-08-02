@@ -11,7 +11,7 @@ import { FieldErrorMessage } from '@/components/elements/typography';
 
 import { ITextInputRhfProps } from '@/types/forms-input-rhf';
 
-export function TextInputRhf({ name, ...rest }: ITextInputRhfProps) {
+export function TextInputRhf({ name, label, ...rest }: ITextInputRhfProps) {
   const t = useTranslations();
   const { field, fieldState } = useController({ name });
 
@@ -23,6 +23,7 @@ export function TextInputRhf({ name, ...rest }: ITextInputRhfProps) {
         input: classes.input,
         label: classes.label,
       }}
+      label={t(`input.${label}`)}
       labelProps={{
         fw: 500,
         tt: 'uppercase',
