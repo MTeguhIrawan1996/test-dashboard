@@ -11,11 +11,9 @@ export function CommonDataTable<T>({ tableProps }: ICommonDataTableProps<T>) {
   return (
     <DataTable
       minHeight={tableProps.records && tableProps.records?.length > 0 ? 0 : 300}
-      withColumnBorders
       withRowBorders
-      withTableBorder
       highlightOnHover
-      striped
+      verticalSpacing='md'
       defaultColumnProps={{
         textAlign: 'left',
         noWrap: true,

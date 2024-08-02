@@ -1,0 +1,36 @@
+.widget-withBorder {
+  border: rem(2px) solid var(--mantine-color-gray-4);
+  transition-property: all;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  & .textWidget {
+    color: var(--mantine-color-gray-5);
+  }
+
+  &:hover {
+    border: rem(2px) solid var(--mantine-primary-color-6);
+    color: var(--mantine-primary-color-6);
+    & .textWidget {
+      color: var(--mantine-primary-color-6);
+    }
+  }
+}
+.widget {
+  border-bottom: rem(2px) solid var(--mantine-color-gray-4);
+  transition-property: all;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  & .textWidget {
+    color: var(--mantine-color-gray-5);
+  }
+
+  &:hover {
+    color: var(--mantine-primary-color-6);
+    & .textWidget {
+      color: var(--mantine-primary-color-6);
+    }
+  }
+  &:last-of-type {
+    border-bottom: rem(0px) solid var(--mantine-color-gray-4);
+  }
+}

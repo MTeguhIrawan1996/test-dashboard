@@ -25,5 +25,24 @@
     "articles": "Articles",
     "settings": "Settings",
     "subscription": "Subscription"
+  },
+  "overview": {
+    "unresolved": "Unresolved",
+    "overdue": "Overdue",
+    "open": "Open",
+    "onHold": "On Hold",
+    "resolved": "Resolved",
+    "received": "Received",
+    "averageFirstResponseTime": "Average first response time",
+    "averageResponseTime": "Average response time",
+    "resolutionwithinSLA": "Resolution within SLA",
+    "todaysTrends": "Today's trends",
+    "nthAsOf": "as of {value}",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "task": "Task",
+    "unresolvedTickets": "Unresolved Tickets",
+    "viewDetails": "View Details",
+    "viewAll": "View All"
   }
 }

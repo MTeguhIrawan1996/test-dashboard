@@ -10,7 +10,6 @@ import {
   Title,
 } from '@mantine/core';
 import { IconBell, IconSearch } from '@tabler/icons-react';
-// import { ThemeButton } from '@/components/elements';
 import dynamic from 'next/dynamic';
 import { usePathname } from 'next/navigation';
 import * as React from 'react';
@@ -35,7 +34,7 @@ export const Header = ({ opened, toggle }: IHeaderProps) => {
   const currentTitle = pathname.split('/')[1];
 
   return (
-    <Group justify='space-between' py='lg'>
+    <Group justify='space-between' py='lg' mb='lg'>
       <Group gap='sm'>
         <Burger
           opened={opened}

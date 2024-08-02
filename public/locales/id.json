@@ -25,5 +25,24 @@
     "articles": "Artikel",
     "settings": "Pengaturan",
     "subscription": "Langganan"
+  },
+  "overview": {
+    "unresolved": "Belum Terselesaikan",
+    "overdue": "Terlambat",
+    "open": "Terbuka",
+    "onHold": "Ditahan",
+    "resolved": "Terselesaikan",
+    "received": "Diterima",
+    "averageFirstResponseTime": "Rata-rata waktu respons pertama",
+    "averageResponseTime": "Rata-rata waktu respons",
+    "resolutionwithinSLA": "Penyelesaian dalam SLA",
+    "todaysTrends": "Tren hari ini",
+    "nthAsOf": "Per {value}",
+    "today": "Hari ini",
+    "yesterday": "Kemarin",
+    "task": "Tugas",
+    "unresolvedTickets": "Tiket Belum Terselesaikan",
+    "viewDetails": "Lihat Rincian",
+    "viewAll": "Lihat Semua"
   }
 }

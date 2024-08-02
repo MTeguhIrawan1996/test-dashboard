@@ -37,6 +37,8 @@ module.exports = {
       'warn',
       { props: 'never', children: 'never' },
     ],
+    'dot-notation': 'off',
+    '@typescript-eslint/dot-notation': 'off',
 
     //#region  //*=========== Unused Import ===========
     '@typescript-eslint/no-unused-vars': 'off',

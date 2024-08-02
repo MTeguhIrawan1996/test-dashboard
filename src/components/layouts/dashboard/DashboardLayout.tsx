@@ -21,7 +21,7 @@ export const AppShellDashboardLayout = ({
   return (
     <AppShell
       navbar={{
-        width: { base: 250, md: 300 },
+        width: { base: 200, md: 250 },
         breakpoint: 'sm',
         collapsed: { mobile: !opened },
       }}

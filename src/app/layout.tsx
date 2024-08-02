@@ -4,8 +4,11 @@ import { Poppins } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
 
-import '@mantine/core/styles.css';
-import './globals.css';
+// import '@mantine/core/styles.css';
+import '@mantine/charts/styles.css';
+import '@mantine/core/styles.layer.css';
+import 'mantine-datatable/styles.layer.css';
+import './layout.css';
 
 import { theme } from '@/theme';
 
@@ -34,7 +37,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <head>
-        <ColorSchemeScript defaultColorScheme='light' />
+        <ColorSchemeScript defaultColorScheme='auto' />
       </head>
       <body className={roboto.className}>
         <NextIntlClientProvider messages={messages}>
