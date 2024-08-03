@@ -5,9 +5,9 @@ import { createTheme, rem, virtualColor } from '@mantine/core';
 export const theme = createTheme({
   /* Put your mantine theme override here */
   /* Typography */
-  fontFamily: 'Poppins, sans-serif',
+  fontFamily: 'Nunito, sans-serif',
   headings: {
-    fontFamily: 'Poppins, sans-serif',
+    fontFamily: 'Nunito, sans-serif',
     sizes: {
       h1: { fontSize: rem(36) },
     },

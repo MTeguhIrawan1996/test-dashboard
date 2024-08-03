@@ -44,5 +44,12 @@
     "unresolvedTickets": "Unresolved Tickets",
     "viewDetails": "View Details",
     "viewAll": "View All"
+  },
+  "tickets": {
+    "allTickets": "All Tickets",
+    "ticketDetail": "Ticket Details",
+    "customerName": "Customer Name",
+    "date": "Date",
+    "priority": "Priority"
   }
 }

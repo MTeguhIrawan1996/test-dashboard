@@ -9,9 +9,9 @@ import {
   Text,
   Title,
 } from '@mantine/core';
-import { IconBell, IconSearch } from '@tabler/icons-react';
+import { IconBell, IconLogout, IconSearch } from '@tabler/icons-react';
 import dynamic from 'next/dynamic';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import * as React from 'react';
 
 import { InternatinoalizationButton } from '@/components/elements';
@@ -31,6 +31,7 @@ type IHeaderProps = {
 
 export const Header = ({ opened, toggle }: IHeaderProps) => {
   const pathname = usePathname();
+  const router = useRouter();
   const currentTitle = pathname.split('/')[1];
 
   return (
@@ -44,7 +45,7 @@ export const Header = ({ opened, toggle }: IHeaderProps) => {
           color='dark.4'
           lineSize={3}
         />
-        <Title order={1} tt='capitalize' fz={24} fw={500}>
+        <Title order={1} tt='capitalize' fz={24} fw={600}>
           {currentTitle}
         </Title>
       </Group>
@@ -72,6 +73,14 @@ export const Header = ({ opened, toggle }: IHeaderProps) => {
           Jones Ferdinan
         </Text>
         <Avatar size='md' />
+        <ActionIcon
+          pos='relative'
+          variant='transparent'
+          c='gray.5'
+          onClick={() => router.push('login')}
+        >
+          <IconLogout />
+        </ActionIcon>
       </Group>
     </Group>
   );

@@ -62,7 +62,7 @@ export const CardGroup = () => {
         <Stack gap='lg'>
           <Group justify='space-between' px='xl' pt='xl' align='flex-start'>
             <Stack gap='xs'>
-              <Title order={2} fz={20} fw={500}>
+              <Title order={2} fz={20} fw={600}>
                 {t('unresolvedTickets')}
               </Title>
               <Text fz={12} c='gray.5'>
@@ -86,7 +86,7 @@ export const CardGroup = () => {
                 {
                   accessor: 'label',
                   render: ({ label }) => (
-                    <Text fz={16} fw={500}>
+                    <Text fz={16} fw={600}>
                       {label}
                     </Text>
                   ),
@@ -95,7 +95,7 @@ export const CardGroup = () => {
                   accessor: 'value',
                   textAlign: 'right',
                   render: ({ value }) => (
-                    <Text fz={14} fw={500} c='gray.5'>
+                    <Text fz={14} fw={600} c='gray.5'>
                       {value}
                     </Text>
                   ),
@@ -109,7 +109,7 @@ export const CardGroup = () => {
         <Stack gap='lg'>
           <Group justify='space-between' px='xl' pt='xl' align='flex-start'>
             <Stack gap='xs'>
-              <Title order={2} fz={20} fw={500}>
+              <Title order={2} fz={20} fw={600}>
                 {t('task')}
               </Title>
               <Text fz={12} c='gray.5'>
@@ -155,7 +155,7 @@ export const CardGroup = () => {
                     <Checkbox
                       readOnly
                       checked={checked}
-                      fw={500}
+                      fw={600}
                       size='md'
                       label={label}
                       radius='xl'
@@ -183,7 +183,7 @@ export const CardGroup = () => {
                     </ActionIcon>
                   ),
                   render: ({ value, color }) => (
-                    <Badge color={color} size='lg' radius='md'>
+                    <Badge color={color} size='lg' fz={12} fw={500} radius='md'>
                       {value}
                     </Badge>
                   ),

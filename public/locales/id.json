@@ -44,5 +44,12 @@
     "unresolvedTickets": "Tiket Belum Terselesaikan",
     "viewDetails": "Lihat Rincian",
     "viewAll": "Lihat Semua"
+  },
+  "tickets": {
+    "allTickets": "Semua Tiket",
+    "ticketDetail": "Detail Tiket",
+    "customerName": "Nama Pelanggan",
+    "date": "Tanggal",
+    "priority": "Prioritas"
   }
 }

@@ -14,6 +14,19 @@ import {
   loginSchemaValidation,
 } from '@/utils/validation/auth/auth-validation';
 
+const mock = [
+  {
+    email: 'admin@gmail.com',
+    role: 'admin',
+    password: 'Qwerty123',
+  },
+  {
+    email: 'guest@gmail.com',
+    role: 'guest',
+    password: 'Qwerty123',
+  },
+];
+
 export function LoginFormClient() {
   const t = useTranslations();
   const router = useRouter();
@@ -27,8 +40,16 @@ export function LoginFormClient() {
     mode: 'onSubmit',
   });
 
-  const handleSubmitForm: SubmitHandler<ILoginTypeSchema> = async () => {
-    router.push('/overview');
+  const handleSubmitForm: SubmitHandler<ILoginTypeSchema> = async ({
+    email,
+    password,
+  }) => {
+    const currentAccount = mock.find((o) => o.email === email);
+    if (currentAccount) {
+      if (currentAccount?.password === password) {
+        router.push('/overview');
+      }
+    }
   };
   return (
     <FormProvider {...methods}>

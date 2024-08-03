@@ -69,6 +69,14 @@ You can start the commit using this command:
 yarn git:commit
 ```
 
+### 4. Email and Password
+
+```bash
+admin: admin@gmail.com
+guest: guest@gmail.com
+password: Qwerty123
+```
+
 <!-- ## Projects using ts-nextjs-mantine ui-starter -->
 
 <!--

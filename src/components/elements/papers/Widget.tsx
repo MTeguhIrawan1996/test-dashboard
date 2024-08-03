@@ -34,10 +34,10 @@ export const Widget = ({
       {...rest}
     >
       <Stack justify='center' align='center' py={stackPy}>
-        <Text fz='md' fw={500} className={classes['textWidget']}>
+        <Text fz='md' fw={600} className={classes['textWidget']}>
           {label}
         </Text>
-        <Text fz='h2' fw={600}>
+        <Text fz='h2' fw={700}>
           {value}
         </Text>
       </Stack>

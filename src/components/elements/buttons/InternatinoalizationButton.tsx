@@ -17,8 +17,8 @@ export function InternatinoalizationButton() {
       color='gray.5'
       checked={(locale as Locale) === 'id'}
       size='md'
-      onLabel={<Text fz={12}>ID</Text>}
-      offLabel={<Text fz={12}>EN</Text>}
+      onLabel={<Text fz={10}>ID</Text>}
+      offLabel={<Text fz={10}>EN</Text>}
       onChange={handleSetLocale}
     />
   );

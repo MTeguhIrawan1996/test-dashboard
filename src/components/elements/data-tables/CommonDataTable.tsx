@@ -18,7 +18,7 @@ export function CommonDataTable<T>({ tableProps }: ICommonDataTableProps<T>) {
         textAlign: 'left',
         noWrap: true,
         ellipsis: true,
-        titleStyle: (theme) => ({ color: theme.colors.green[6] }),
+        titleStyle: (theme) => ({ color: theme.colors.gray[6] }),
         ...tableProps.defaultColumnProps,
       }}
       defaultColumnRender={(row, _, accessor) => {

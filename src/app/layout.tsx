@@ -1,6 +1,6 @@
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
+import { Nunito } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
 
@@ -12,8 +12,8 @@ import './layout.css';
 
 import { theme } from '@/theme';
 
-const roboto = Poppins({
-  weight: ['400', '500', '700', '300'],
+const roboto = Nunito({
+  weight: ['400', '500', '700', '600'],
   subsets: ['latin'],
   display: 'swap',
   style: ['normal', 'italic'],
@@ -37,7 +37,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <head>
-        <ColorSchemeScript defaultColorScheme='auto' />
+        <ColorSchemeScript defaultColorScheme='light' />
       </head>
       <body className={roboto.className}>
         <NextIntlClientProvider messages={messages}>

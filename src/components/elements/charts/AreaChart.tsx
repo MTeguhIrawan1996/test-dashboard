@@ -13,7 +13,7 @@ export const AreaChart = () => {
   return (
     <Stack p='xl' gap='xl' pos='relative' h={{ base: 500, md: '100%' }}>
       <Stack gap='xs' pos='absolute'>
-        <Title order={2} fz={20} fw={500}>
+        <Title order={2} fz={20} fw={600}>
           {t('todaysTrends')}
         </Title>
         <Text component='span' fz={12} c='gray.5'>
