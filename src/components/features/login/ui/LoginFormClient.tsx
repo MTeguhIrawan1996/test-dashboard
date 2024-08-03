@@ -47,7 +47,7 @@ export function LoginFormClient() {
     const currentAccount = mock.find((o) => o.email === email);
     if (currentAccount) {
       if (currentAccount?.password === password) {
-        router.push('/overview');
+        router.push(`/overview?role=${currentAccount.role}`);
       }
     }
   };

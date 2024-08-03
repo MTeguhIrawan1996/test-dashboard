@@ -41,6 +41,7 @@
     "mantine-datatable": "^7.11.3",
     "next": "14.2.3",
     "next-intl": "^3.17.2",
+    "nuqs": "^1.17.6",
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.52.1",

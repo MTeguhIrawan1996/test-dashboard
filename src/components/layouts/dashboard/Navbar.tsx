@@ -12,23 +12,11 @@ import {
 } from '@tabler/icons-react';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
-import { useState } from 'react';
+import { useQueryState } from 'nuqs';
 
 import classes from '@/components/layouts/dashboard/Dashboard.module.css';
 
 import { PrimaryLink } from '@/components/elements';
-
-const tabs = {
-  admin: [
-    { link: '/overview', label: 'overview', icon: IconChartPieFilled },
-    { link: '/tickets', label: 'tickets', icon: IconTicket },
-    { link: '', label: 'ideas', icon: IconBulb },
-    { link: '', label: 'contact', icon: IconUsersGroup },
-    { link: '', label: 'agents', icon: IconUserFilled },
-    { link: '', label: 'articles', icon: IconBook2 },
-  ],
-  guest: [{ link: '', label: 'tickets', icon: IconTicket }],
-};
 
 type INavbar = {
   opened: boolean;
@@ -37,14 +25,32 @@ type INavbar = {
 
 export const Navbar = ({ opened, toggle }: INavbar) => {
   const pathname = usePathname();
-  const t = useTranslations('navbar');
-  // eslint-disable-next-line unused-imports/no-unused-vars
-  const [section, setSection] = useState<'admin' | 'guest'>('admin');
+  const [role] = useQueryState('role', { defaultValue: '' });
 
-  const links = tabs[section].map((item) => (
+  const t = useTranslations('navbar');
+
+  const tabs = {
+    admin: [
+      {
+        link: `/overview?role=${role}`,
+        label: 'overview',
+        icon: IconChartPieFilled,
+      },
+      { link: `/tickets?role=${role}`, label: 'tickets', icon: IconTicket },
+      { link: '', label: 'ideas', icon: IconBulb },
+      { link: '', label: 'contact', icon: IconUsersGroup },
+      { link: '', label: 'agents', icon: IconUserFilled },
+      { link: '', label: 'articles', icon: IconBook2 },
+    ],
+    guest: [
+      { link: `/tickets?role=${role}`, label: 'tickets', icon: IconTicket },
+    ],
+  };
+
+  const links = tabs[role]?.map((item) => (
     <PrimaryLink
       className={classes.link}
-      data-active={item.link === pathname || undefined}
+      data-active={item.link === `${pathname}?role=${role}` || undefined}
       href={item.link}
       key={item.label}
     >
